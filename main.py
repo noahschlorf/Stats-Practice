@@ -9,7 +9,6 @@ y_val = None
 lowerbound = 0
 upperbound = None
 
-
 if lowerbound is None:
     lowerbound = random.randint(-5, 0)
 
@@ -93,7 +92,7 @@ while User_EX != "stop":
     try:
         User_EX = float(User_EX)
         if abs(User_EX - E_X) < tolerance:
-            print("E_X is correct!")
+            print("E(X) is correct!")
             break
         else:
             print("E_X is incorrect. Try again.")
@@ -256,7 +255,7 @@ while Independence != "stop":
 # corr(x,y) = Cov(x,y)/sqrt(var(x)*(var(y)))
 User_Corr_XY = None
 while User_Corr_XY != 'stop':
-    User_Corr_XY = input("Enter in the Correlation, Corr(X,Y)")
+    User_Corr_XY = input("Enter in the Correlation, Corr(X,Y: )")
     try:
         User_Corr_XY = float(User_Corr_XY)
         if abs(User_Corr_XY - Corr_XY) < tolerance:
